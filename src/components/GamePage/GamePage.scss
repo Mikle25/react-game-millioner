@@ -1,4 +1,4 @@
-.Game-page {
+.game-page {
   display: grid;
   grid-template-columns: 3fr 1fr;
   width: 100%;
@@ -71,11 +71,8 @@
       grid-template-columns: 1fr;
     }
 
-    & input {
-      display: none;
-    }
-
     & svg {
+      cursor: pointer;
       display: flex;
       width: 100%;
 
@@ -86,17 +83,41 @@
         width: 100%;
       }
 
-      &:hover path {
-        stroke: #FF8B37;
+      @media screen and (min-width: 1025px) {
+        &:hover path {
+          stroke: #FF8B37;
+        }
       }
+    }
+
+    &--select path {
+      stroke: #FF8B37;
+      fill: #FFF3EB;
+    }
+
+    &--correct path {
+      stroke: #47D867;
+      fill: #E6FAEA
+    }
+
+    &--wrong path {
+      stroke: #EC6259;
+      fill: #FDEEED;
     }
   }
 
   &__container-total {
     display: grid;
+    grid-row-end: span;
     align-content: center;
     grid-auto-rows: max-content;
     grid-row-gap: 10px;
+
+    @for $i from 1 to 12 {
+      &-#{$i} {
+        grid-row: $i;
+      }
+    }
 
     & svg {
       width: 100%;
@@ -118,6 +139,11 @@
         transform: translateY(0);
       }
     }
+
+    &--current-money path,
+    &--current-money text {
+      stroke: #FF8B37;
+    }
   }
 
   &__inner-menu {
@@ -130,4 +156,9 @@
       padding: 0 20px;
     }
   }
+}
+
+.finished-money path,
+.finished-money text {
+  stroke: #D0D0D8;
 }

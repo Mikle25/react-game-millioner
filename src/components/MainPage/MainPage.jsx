@@ -5,16 +5,24 @@ import logo from '../../assets/images/Logo.svg';
 
 
 export const MainPage = () => {
-
   return (
-    <section className="Main-page">
-      <div className="Main-page__inner">
-        <div className="Main-page__images">
-          <img className="Main-page__logo" src={logo} alt="Logo"/>
+    <section className="main-page">
+      <div className="main-page__inner">
+        <div className="main-page__images">
+          <img
+            className="main-page__logo"
+            src={logo}
+            alt="Logo"
+          />
         </div>
-        <div className="Main-page__play">
+        <div className="main-page__play">
           <h1>Who wants to be a millionaire?</h1>
-            <Link to="/game" className="Main-page__play-btn">Start</Link>
+            <Link
+              to="/game"
+              className="main-page__play-btn"
+            >
+              Start
+            </Link>
         </div>
       </div>
     </section>
