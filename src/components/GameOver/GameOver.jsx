@@ -9,7 +9,11 @@ export const GameOver = () => {
     <section className="Game-over">
       <div className="Game-over__inner">
         <div className="Game-over__images">
-          <img className="Game-over__logo" src={logo} alt="Logo"/>
+          <img
+            className="Game-over__logo"
+            src={logo}
+            alt="Logo"
+          />
         </div>
         <div className="Game-over__play">
           <div>

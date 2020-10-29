@@ -1,45 +1,68 @@
 import React, { useState } from 'react';
+import classnames from 'classnames';
 import './GamePage.scss';
+import data from '../../assets/api/api.json';
 
 export const GamePage = () => {
-  const [question, setQuestion] = useState(['A', 'B', 'C', 'D']);
-  const [money, setMoney] = useState([
-    500,
-    1000,
-    2000,
-    4000,
-    8000,
-    16000,
-    32000,
-    64000,
-    125000,
-    250000,
-    500000,
-    1000000
-  ]);
+  const [level, setLevel] = useState(0)
   const [total, setTotal] = useState(0);
+  const [isToggleBtnMenu, setToggleBtnMenu] = useState(false);
+
+  const selectAnswer = (e) => {
+    if (level <= data.questions.length) {
+      if (
+        e.tagName === 'INPUT'
+        && data.questions[level].answer.includes(e.value)) {
+          console.log(level)
+
+          setLevel(level + 1);
+          return;
+      } else {
+        setLevel(0);
+        // window.location.assign('http://localhost:3000/#/game-over/');
+      }
+    }
+  }
 
   return (
     <section className="Game-page">
       <div className="Game-page__container-game">
-        <button className="Game-page__menu">
-          <span></span>
-        </button>
+        <div className="Game-page__inner-menu">
+          <button
+            className={
+              classnames(
+                "menu",
+                {"menu--active": isToggleBtnMenu}
+              )
+            }
+            onClick={() => setToggleBtnMenu(!isToggleBtnMenu)}>
+            <span></span>
+          </button>
+        </div>
 
         <div className="Game-page__question">
-          <p>How old your elder brother was 10 years before you was born, mate?</p>
+          <p>{data.questions[level].quest}</p>
         </div>
 
         <div className="Game-page__answer">
-        {question.map((elem, i) => (
-          <svg
+        {data.questions[level].options.map((elem, i) => {
+        return (
+          <label
+            htmlFor={i}
+            onClick={(e) => {
+              selectAnswer(e.target)
+            }}
             key={i}
+          >
+            <input
+              type="checkbox"
+              id={i}
+              value={Object.values(elem)}
+            />
+          <svg
             viewBox="0 0 405 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            onClick={() => {
-              window.location.assign('http://localhost:3000/#/game-over/');
-            }}
           >
             <path d="M388 36L405 36" stroke="#D0D0D8"/>
             <path d="M0 36L17 36" stroke="#D0D0D8"/>
@@ -50,30 +73,36 @@ export const GamePage = () => {
               fill="#FF8B37"
               dominantBaseline="central"
             >
-              {elem}
+              {Object.keys(elem)}
             </text>
 
             <text
               x="25%"
               y="50%"
+              viewBox="0 0 405 72"
               fill="#000"
               dominantBaseline="central"
             >
-              {elem}
+              {Object.values(elem)}
             </text>
           </svg>
-        ))}
+          </label>
+        )})}
         </div>
       </div>
 
-      <div className="Game-page__container-total">
-        {money
+      <div className={
+        classnames(
+          "Game-page__container-total",
+          {"Game-page__container-total--active": isToggleBtnMenu}
+          )
+        }
+      >
+        {data.money
           .sort((a, b) => b - a)
           .map((elem, i) => (
           <svg
             key={i}
-            width="376"
-            height="40"
             viewBox="0 0 376 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

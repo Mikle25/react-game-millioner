@@ -4,8 +4,12 @@
   width: 100%;
   height: 100vh;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: 2fr 1fr;
   }
 
   &__container-game {
@@ -16,11 +20,13 @@
     background-color: #F5F5F7;
 
     @media screen and (max-width: 480px) {
-      padding: 24px 0;
+      padding: 5vw 0;
     }
 
-    @media screen and (max-width: 1024px) {
-      padding-bottom: 40px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
     }
   }
 
@@ -34,7 +40,9 @@
     }
 
     @media screen and (max-width: 1024px) {
-      align-self: center;
+      justify-self: center;
+      width: 100%;
+      text-align: center;
     }
 
     & p {
@@ -57,6 +65,14 @@
 
     @media screen and (max-width: 480px) {
       grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      grid-template-columns: 1fr;
+    }
+
+    & input {
+      display: none;
     }
 
     & svg {
@@ -82,29 +98,36 @@
     grid-auto-rows: max-content;
     grid-row-gap: 10px;
 
-    @media screen and (max-width: 1024px) {
-      display: none;
+    & svg {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      align-content: end;
+      grid-row-gap: 5px;
+      padding-bottom: 10vw;
+
+      background: #F5F5F7;
+      transform: translateY(-100%);
+      transition: all 0.6s linear;
+
+      &--active {
+        transform: translateY(0);
+      }
     }
   }
 
-  &__menu {
-    width: 50px;
-    height: 50px;
-    border: none;
-    padding: 0;
-    background-color: transparent;
+  &__inner-menu {
     display: none;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
+      z-index: 10;
       display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    & span {
-      width: 30px;
-      height: 2px;
-      background-color: #000;
+      justify-content: flex-end;
+      padding: 0 20px;
     }
   }
 }
