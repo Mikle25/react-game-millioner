@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
   Switch,
   Route,
@@ -8,6 +9,16 @@ import { GamePage } from './components/GamePage/GamePage.jsx';
 import { GameOver } from './components/GameOver/GameOver.jsx';
 
 function App() {
+  const [total, setTotal] = useState(0);
+
+  const updateTotal = (value) => {
+    setTotal(value)
+  }
+
+  const zeroingTotal = () => {
+    setTotal(0)
+  }
+
   return (
     <div className="App">
       <HashRouter>
@@ -18,17 +29,23 @@ function App() {
               component={ MainPage }
             >
             </Route>
+
             <Route
               path="/game"
               exact
-              component={ GamePage }
             >
+              <GamePage updateTotal={updateTotal} />
             </Route>
+
             <Route
               path="/game-over"
               exact
-              component={ GameOver }
-            />
+            >
+              <GameOver
+                total={total}
+                zeroingTotal={zeroingTotal}
+              />
+            </Route>
 
         </Switch>
       </HashRouter>

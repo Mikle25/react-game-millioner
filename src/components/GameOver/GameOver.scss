@@ -1,4 +1,4 @@
-.Game-over {
+.game-over {
   display: flex;
   align-items: center;
   width: 100%;
@@ -51,11 +51,15 @@
       height: 100%;
     }
 
-    & h1 {
+    & h1,
+    & p {
       font-style: normal;
       font-weight: 600;
-      font-size: 4vw;
       line-height: 116%;
+    }
+
+    & h1 {
+      font-size: 4vw;
 
       @media (max-width: 480px) {
         font-size: 32px;
@@ -63,9 +67,12 @@
     }
 
     & p {
-      font-weight: 600;
       font-size: 3vw;
-      line-height: 116%;
+      opacity: 0.5;
+
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
     }
 
     &-btn {

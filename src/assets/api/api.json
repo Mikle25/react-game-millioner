@@ -5,10 +5,10 @@
       "quest": "Which US President wrote his own story about Sherlock Holmes?",
       "answer": ["Franklin Roosevelt"],
       "options": [
-        {"A": "John F. Kennedy"},
-        {"B": "Franklin Roosevelt"},
-        {"C": "Ronald Reagan"},
-        {"D": "Bill Clinton"}
+        "John F. Kennedy",
+        "Franklin Roosevelt",
+        "Ronald Reagan",
+        "Bill Clinton"
       ]
     },
     {
@@ -16,10 +16,10 @@
       "quest": "Tourists coming to Mallorca are required to pay tax ...",
       "answer": ["In the sun"],
       "options": [
-        {"A": "For swimming trunks"},
-        {"B": "On the palms"},
-        {"C": "In the sun"},
-        {"D": "On the sand"}
+        "For swimming trunks",
+        "On the palms",
+        "In the sun",
+        "On the sand"
       ]
     },
     {
@@ -27,10 +27,10 @@
       "quest": "The Oscar-winning Russian cartoon is ...",
       "answer": ["The Old Man and the Sea"],
       "options": [
-        {"A": "Prostokvashino"},
-        {"B": "Winnie the Pooh"},
-        {"C": "The Old Man and the Sea"},
-        {"D": "Well, wait a minute!"}
+        "Prostokvashino",
+        "Winnie the Pooh",
+        "The Old Man and the Sea",
+        "Well, wait a minute!"
       ]
     },
     {
@@ -38,10 +38,10 @@
       "quest": "What was the clothing equivalent of money in the Russian Empire?",
       "answer": ["Skins of fur animals"],
       "options": [
-        {"A": "Skins of fur animals"},
-        {"B": "Cattle"},
-        {"C": "Tobacco"},
-        {"D": "Women's earrings"}
+        "Skins of fur animals",
+        "Cattle",
+        "Tobacco",
+        "Women's earrings"
       ]
     },
     {
@@ -49,10 +49,10 @@
       "quest": "What is the shape of the fire bucket?",
       "answer": ["Cone"],
       "options": [
-        {"A": "Cube"},
-        {"B": "Cone"},
-        {"C": "Cylinder"},
-        {"D": "Ball"}
+        "Cube",
+        "Cone",
+        "Cylinder",
+        "Ball"
       ]
     },
     {
@@ -60,79 +60,80 @@
       "quest": "Which of these countries does the Czech Republic not border on?",
       "answer": ["Hungary"],
       "options": [
-        {"A": "Germany"},
-        {"B": "Austria"},
-        {"C": "Hungary"},
-        {"D": "Poland"}
+        "Germany",
+        "Austria",
+        "Hungary",
+        "Poland"
       ]
     },
     {
       "id": 7,
-      "quest": "",
-      "answer": [""],
+      "quest": "What, according to a Russian proverb, cannot be hidden in a bag?",
+      "answer": ["Awl"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "Car",
+        "Knife",
+        "Human",
+        "Awl"
       ]
     },
     {
       "id": 8,
-      "quest": "",
-      "answer": [""],
+      "quest": "Which of these countries is the largest?",
+      "answer": ["Japan"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "Italy",
+        "Germany",
+        "Japan",
+        "Finland"
       ]
     },
     {
       "id": 9,
-      "quest": "",
-      "answer": [""],
+      "quest": "Which of these rivers flows into the Sea of Azov?",
+      "answer": ["Don"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "Dnieper",
+        "Dniester",
+        "Southern Bug",
+        "Don"
       ]
     },
     {
       "id": 10,
-      "quest": "",
-      "answer": [""],
+      "quest": "Which of the following countries has the largest land area?",
+      "answer": ["Russia"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "America",
+        "Russia",
+        "Japan",
+        "China"
       ]
     },
     {
       "id": 11,
-      "quest": "",
-      "answer": [""],
+      "quest": "Who is Arina Rodionovna?",
+      "answer": ["Nanny Pushkin"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "Singer 80s",
+        "Nanny Pushkin",
+        "Writer",
+        "Actress"
       ]
     },
     {
       "id": 12,
-      "quest": "",
-      "answer": [""],
+      "quest": "What tree do acorns come from?",
+      "answer": ["Oak"],
       "options": [
-        {"A": ""},
-        {"B": ""},
-        {"C": ""},
-        {"D": ""}
+        "Oak",
+        "Chestnut",
+        "Ash",
+        "Maple"
       ]
     }
   ],
+  "variants": ["A", "B", "C", "D"],
   "money": [
     500,
     1000,
