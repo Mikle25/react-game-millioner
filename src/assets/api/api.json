@@ -1,0 +1,150 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "quest": "Which US President wrote his own story about Sherlock Holmes?",
+      "answer": ["Franklin Roosevelt"],
+      "options": [
+        {"A": "John F. Kennedy"},
+        {"B": "Franklin Roosevelt"},
+        {"C": "Ronald Reagan"},
+        {"D": "Bill Clinton"}
+      ]
+    },
+    {
+      "id": 2,
+      "quest": "Tourists coming to Mallorca are required to pay tax ...",
+      "answer": ["In the sun"],
+      "options": [
+        {"A": "For swimming trunks"},
+        {"B": "On the palms"},
+        {"C": "In the sun"},
+        {"D": "On the sand"}
+      ]
+    },
+    {
+      "id": 3,
+      "quest": "The Oscar-winning Russian cartoon is ...",
+      "answer": ["The Old Man and the Sea"],
+      "options": [
+        {"A": "Prostokvashino"},
+        {"B": "Winnie the Pooh"},
+        {"C": "The Old Man and the Sea"},
+        {"D": "Well, wait a minute!"}
+      ]
+    },
+    {
+      "id": 4,
+      "quest": "What was the clothing equivalent of money in the Russian Empire?",
+      "answer": ["Skins of fur animals"],
+      "options": [
+        {"A": "Skins of fur animals"},
+        {"B": "Cattle"},
+        {"C": "Tobacco"},
+        {"D": "Women's earrings"}
+      ]
+    },
+    {
+      "id": 5,
+      "quest": "What is the shape of the fire bucket?",
+      "answer": ["Cone"],
+      "options": [
+        {"A": "Cube"},
+        {"B": "Cone"},
+        {"C": "Cylinder"},
+        {"D": "Ball"}
+      ]
+    },
+    {
+      "id": 6,
+      "quest": "Which of these countries does the Czech Republic not border on?",
+      "answer": ["Hungary"],
+      "options": [
+        {"A": "Germany"},
+        {"B": "Austria"},
+        {"C": "Hungary"},
+        {"D": "Poland"}
+      ]
+    },
+    {
+      "id": 7,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    },
+    {
+      "id": 8,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    },
+    {
+      "id": 9,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    },
+    {
+      "id": 10,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    },
+    {
+      "id": 11,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    },
+    {
+      "id": 12,
+      "quest": "",
+      "answer": [""],
+      "options": [
+        {"A": ""},
+        {"B": ""},
+        {"C": ""},
+        {"D": ""}
+      ]
+    }
+  ],
+  "money": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    125000,
+    250000,
+    500000,
+    1000000
+  ]
+}
