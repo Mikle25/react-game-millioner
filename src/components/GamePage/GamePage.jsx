@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import classnames from 'classnames';
 import './GamePage.scss';
 import data from '../../assets/api/api.json';
 
 export const GamePage = ({ updateTotal }) => {
+  const history = useHistory();
   const [level, setLevel] = useState(0)
   const [isToggleBtnMenu, setToggleBtnMenu] = useState(false);
-  const levelMoney = [...data.money];
   const [select, setSelect] = useState('');
-  const [correct, setDone] = useState('');
+  const [correct, setCorrect] = useState('');
   const [wrong, setWrong] = useState('');
+
+  const levelMoney = [...data.money];
+  const questions = [...data.questions];
+  const question = questions[level].quest;
+  const options = questions[level].options;
 
   const selectAnswer = (e) => {
     setSelect(e.id);
 
       setTimeout(()=>{
-        if (data.questions[level].answer.includes(e.id)) {
-          setDone(e.id);
+        if (questions[level].answer.includes(e.id)) {
+          setCorrect(e.id);
 
           setTimeout(() => {
             updateTotal(levelMoney[level])
@@ -25,16 +31,16 @@ export const GamePage = ({ updateTotal }) => {
               setLevel(level + 1)
             } else {
               setLevel(0);
-              window.location.assign('http://localhost:3000/#/game-over/');
+              history.push('/game-over');
             }
-          }, 2000)
+          }, 1000)
         } else {
           setWrong(e.id)
 
           setTimeout(() => {
             setLevel(0);
-            window.location.assign('http://localhost:3000/#/game-over/');
-          }, 2000)
+            history.push('/game-over');
+          }, 1000)
         }
       }, 1000)
   }
@@ -56,11 +62,12 @@ export const GamePage = ({ updateTotal }) => {
         </div>
 
         <div className="game-page__question">
-          <p>{data.questions[level].quest}</p>
+          <p>{question}</p>
         </div>
 
         <div className="game-page__answer">
-        {data.questions[level].options.map((answer, i) => (
+        {options
+          .map((answer, i) => (
           <svg
             key={i}
             viewBox="0 0 405 72"
@@ -70,6 +77,7 @@ export const GamePage = ({ updateTotal }) => {
             onClick={(e) => {
               selectAnswer(e.currentTarget)
             }}
+
             className={
               classnames(
                 {"game-page__answer--select": select === answer},
@@ -135,7 +143,7 @@ export const GamePage = ({ updateTotal }) => {
               classnames(
                 `game-page__container-total-${levelMoney.length - i}`,
                 {"game-page__container-total--current-money": level - 1 === i},
-                {"finished-money": i < level - 1}
+                {"game-page__container-total--finished-money": i < level - 1}
               )
             }
           >

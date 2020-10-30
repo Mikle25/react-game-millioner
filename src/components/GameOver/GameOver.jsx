@@ -15,11 +15,14 @@ export const GameOver = ({ total, zeroingTotal }) => {
             alt="Logo"
           />
         </div>
+        
         <div className="game-over__play">
           <div>
             <p>Total score:</p>
+
             <h1>{`$${total.toLocaleString('en-EN')} earned`}</h1>
           </div>
+
           <Link
             to="/"
             className="game-over__play-btn"

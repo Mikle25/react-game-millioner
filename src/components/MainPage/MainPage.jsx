@@ -15,14 +15,16 @@ export const MainPage = () => {
             alt="Logo"
           />
         </div>
+
         <div className="main-page__play">
           <h1>Who wants to be a millionaire?</h1>
-            <Link
-              to="/game"
-              className="main-page__play-btn"
-            >
-              Start
-            </Link>
+          
+          <Link
+            to="/game"
+            className="main-page__play-btn"
+          >
+            Start
+          </Link>
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {
+  BrowserRouter as Router,
   Switch,
   Route,
-  HashRouter,
 } from 'react-router-dom';
 import { MainPage } from './components/MainPage/MainPage.jsx';
 import { GamePage } from './components/GamePage/GamePage.jsx';
@@ -12,23 +12,22 @@ function App() {
   const [total, setTotal] = useState(0);
 
   const updateTotal = (value) => {
-    setTotal(value)
+    setTotal(value);
   }
 
   const zeroingTotal = () => {
-    setTotal(0)
+    setTotal(0);
   }
 
   return (
     <div className="App">
-      <HashRouter>
+      <Router>
           <Switch>
             <Route
               path="/"
               exact
               component={ MainPage }
-            >
-            </Route>
+            />
 
             <Route
               path="/game"
@@ -46,9 +45,8 @@ function App() {
                 zeroingTotal={zeroingTotal}
               />
             </Route>
-
         </Switch>
-      </HashRouter>
+      </Router>
     </div>
   );
 }
