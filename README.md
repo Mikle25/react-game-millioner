@@ -1,4 +1,4 @@
-- [DEMO]("http://Mikle25.github.io/react-game-millioner");
+- [DEMO](http://Mikle25.github.io/react-game-millioner)
 
 # Clone the repo;
 
