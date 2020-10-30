@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-game-millioner/static/css/main.aa0ba62f.chunk.css",
+    "main.js": "/react-game-millioner/static/js/main.2813ad21.chunk.js",
+    "main.js.map": "/react-game-millioner/static/js/main.2813ad21.chunk.js.map",
+    "runtime-main.js": "/react-game-millioner/static/js/runtime-main.5fef49c0.js",
+    "runtime-main.js.map": "/react-game-millioner/static/js/runtime-main.5fef49c0.js.map",
+    "static/js/2.45157a99.chunk.js": "/react-game-millioner/static/js/2.45157a99.chunk.js",
+    "static/js/2.45157a99.chunk.js.map": "/react-game-millioner/static/js/2.45157a99.chunk.js.map",
+    "index.html": "/react-game-millioner/index.html",
+    "static/css/main.aa0ba62f.chunk.css.map": "/react-game-millioner/static/css/main.aa0ba62f.chunk.css.map",
+    "static/js/2.45157a99.chunk.js.LICENSE.txt": "/react-game-millioner/static/js/2.45157a99.chunk.js.LICENSE.txt",
+    "static/media/Logo.3ad94fce.svg": "/react-game-millioner/static/media/Logo.3ad94fce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fef49c0.js",
+    "static/js/2.45157a99.chunk.js",
+    "static/css/main.aa0ba62f.chunk.css",
+    "static/js/main.2813ad21.chunk.js"
+  ]
+}
