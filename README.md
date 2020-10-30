@@ -6,4 +6,4 @@
   - npm install
 
 # Start project
-  -npm start
+  - npm start
