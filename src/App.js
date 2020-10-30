@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
           <Switch>
             <Route
               path="/"
@@ -46,7 +46,7 @@ function App() {
               />
             </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
