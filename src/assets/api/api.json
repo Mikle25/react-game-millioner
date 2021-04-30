@@ -1,0 +1,151 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "quest": "Which US President wrote his own story about Sherlock Holmes?",
+      "answer": ["Franklin Roosevelt"],
+      "options": [
+        "John F. Kennedy",
+        "Franklin Roosevelt",
+        "Ronald Reagan",
+        "Bill Clinton"
+      ]
+    },
+    {
+      "id": 2,
+      "quest": "Tourists coming to Mallorca are required to pay tax ...",
+      "answer": ["In the sun"],
+      "options": [
+        "For swimming trunks",
+        "On the palms",
+        "In the sun",
+        "On the sand"
+      ]
+    },
+    {
+      "id": 3,
+      "quest": "The Oscar-winning Russian cartoon is ...",
+      "answer": ["The Old Man and the Sea"],
+      "options": [
+        "Prostokvashino",
+        "Winnie the Pooh",
+        "The Old Man and the Sea",
+        "Well, wait a minute!"
+      ]
+    },
+    {
+      "id": 4,
+      "quest": "What was the clothing equivalent of money in the Russian Empire?",
+      "answer": ["Skins of fur animals"],
+      "options": [
+        "Skins of fur animals",
+        "Cattle",
+        "Tobacco",
+        "Women's earrings"
+      ]
+    },
+    {
+      "id": 5,
+      "quest": "What is the shape of the fire bucket?",
+      "answer": ["Cone"],
+      "options": [
+        "Cube",
+        "Cone",
+        "Cylinder",
+        "Ball"
+      ]
+    },
+    {
+      "id": 6,
+      "quest": "Which of these countries does the Czech Republic not border on?",
+      "answer": ["Hungary"],
+      "options": [
+        "Germany",
+        "Austria",
+        "Hungary",
+        "Poland"
+      ]
+    },
+    {
+      "id": 7,
+      "quest": "What, according to a Russian proverb, cannot be hidden in a bag?",
+      "answer": ["Awl"],
+      "options": [
+        "Car",
+        "Knife",
+        "Human",
+        "Awl"
+      ]
+    },
+    {
+      "id": 8,
+      "quest": "Which of these countries is the largest?",
+      "answer": ["Japan"],
+      "options": [
+        "Italy",
+        "Germany",
+        "Japan",
+        "Finland"
+      ]
+    },
+    {
+      "id": 9,
+      "quest": "Which of these rivers flows into the Sea of Azov?",
+      "answer": ["Don"],
+      "options": [
+        "Dnieper",
+        "Dniester",
+        "Southern Bug",
+        "Don"
+      ]
+    },
+    {
+      "id": 10,
+      "quest": "Which of the following countries has the largest land area?",
+      "answer": ["Russia"],
+      "options": [
+        "America",
+        "Russia",
+        "Japan",
+        "China"
+      ]
+    },
+    {
+      "id": 11,
+      "quest": "Who is Arina Rodionovna?",
+      "answer": ["Nanny Pushkin"],
+      "options": [
+        "Singer 80s",
+        "Nanny Pushkin",
+        "Writer",
+        "Actress"
+      ]
+    },
+    {
+      "id": 12,
+      "quest": "What tree do acorns come from?",
+      "answer": ["Oak"],
+      "options": [
+        "Oak",
+        "Chestnut",
+        "Ash",
+        "Maple"
+      ]
+    }
+  ],
+  "variants": ["A", "B", "C", "D"],
+  "money": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    125000,
+    250000,
+    500000,
+    1000000
+  ]
+}

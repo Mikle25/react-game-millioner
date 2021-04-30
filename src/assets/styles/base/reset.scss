@@ -1,0 +1,14 @@
+$mainColorFamily: #1C1C21;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: $mainColorFamily;
+}
